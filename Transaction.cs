@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Prog124_Practice_StaticClass_Methods_Constructor
+{
+    internal class Transaction
+    {
+        DateTime _now = DateTime.Now;
+        string _name;
+        double _amount;
+
+        public Transaction(string name, double amount)
+        {
+            _name = name;
+            _amount = amount;
+        }
+
+        public string Name { get => _name; }
+        public double Amount { get => _amount; }
+        public override string ToString()
+        {
+            return $"{_now.ToShortTimeString} - {_amount.ToString("c")}";
+        }
+        
+    }
+}
