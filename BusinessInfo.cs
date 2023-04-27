@@ -9,7 +9,7 @@ namespace Prog124_Practice_StaticClass_Methods_Constructor
     internal static class BusinessInfo
     {
         public static string _businessName = "Something Inc.";
-        public static double _taxAmount;
+        public static double _taxAmount = .11;
         
         static BusinessInfo()
         {
